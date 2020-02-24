@@ -35,7 +35,7 @@ public class Operations {
         }
         System.out.println("Contact Number:");
         while (true) {
-            String contact = scanner.next().trim();
+            String contact = scanner.nextLine().trim();
             if (contact.matches("[0-9]{10}")) {
                 linkedList.add(contact);
                 break;
@@ -43,7 +43,7 @@ public class Operations {
         }
         while (true) {
             System.out.println("Would you like to add another contact number? (y/n):");
-            char choice = scanner.next().charAt(0);
+            char choice = scanner.nextLine().charAt(0);
             if (choice == 'y') {
                 System.out.println("Contact Number : ");
                 String contactNumber1 = scanner.nextLine();
